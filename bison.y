@@ -23,7 +23,7 @@
 
 %token <number> NUM
 %token <string> VAR 
-%token <string> IF ELIF ELSE PRINT FUNCTION INT FLOAT DOUBLE CHAR LP RP LB RB CM SM PLUS MINUS MULT DIV POW FACT ASSIGN FOR COL WHILE BREAK COLON DEFAULT CASE SWITCH INCREMENT DECREMENT LOGIC LOE GOT
+%token <string> IF ELIF ELSE MINIMUM MAXIMUM PRINT FUNCTION INT FLOAT DOUBLE CHAR LP RP LB RB CM SM PLUS MINUS MULT DIV POW FACT ASSIGN FOR COL WHILE BREAK COLON DEFAULT CASE SWITCH INCREMENT DECREMENT LOGIC LOE GOT
 %type <string> statement
 %type <number> expression
 %nonassoc IFX
@@ -233,6 +233,23 @@ expression: NUM				{ $$ = $1; 	}
 	| expression GT expression	{ $$ = $1 > $3; }
 
 	| LP expression RP		{ $$ = $2;	}
+
+	| expression INCREMENT { $$ = 1; $$ = $1 + $$; }
+
+	| MINIMUM LB expression CM expression RB	{ int p,q,r;
+																p=$3;
+																q=$5;
+																if(p<q) $$=p;
+																else $$=q;
+															printf("Minimum value between %d and %d is: %d\n",$3,$5,$$);
+															}
+	| MAXIMUM LB expression CM expression RB	{ int p,q,r;
+																p=$3;
+																q=$5;
+																if(p>q) $$=p;
+																else $$=q;
+															printf("Maximum value between %d and %d is: %d\n",$3,$5,$$);
+															}
 	
 	
 	;

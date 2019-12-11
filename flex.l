@@ -58,6 +58,8 @@ multiple_line_comment [ ]*[#][/][a-zA-Z0-9!@#*(){}_+-,.:\|?><\n\t ]*[/][#]
 "div"	{ return DIV; }
 "pow"	{ return POW; }
 "fact"	{ return FACT; }
+"min"	{ return MINIMUM; }
+"max"	{ return MAXIMUM; }
 ":="		{ return ASSIGN;  }
 "bigger"	{ return GT; }
 "smaller"	{ return LT; }

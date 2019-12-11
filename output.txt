@@ -5,11 +5,9 @@ var_b is already declared
 valid declaration
 
 (var_a) Value of the variable: 8	
-single line comment
 
 (var_b) Value of the variable: 4	
 var_ad not declared yet
-single line comment
 
 value of expression: 15
 
