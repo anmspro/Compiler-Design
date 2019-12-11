@@ -23,7 +23,7 @@
 
 %token <number> NUM
 %token <string> VAR 
-%token <string> IF ELIF ELSE FUNCTION INT FLOAT DOUBLE CHAR LP RP LB RB CM SM PLUS MINUS MULT DIV POW FACT ASSIGN FOR COL WHILE BREAK COLON DEFAULT CASE SWITCH inc LOGIC LOE GOT
+%token <string> IF ELIF ELSE PRINT FUNCTION INT FLOAT DOUBLE CHAR LP RP LB RB CM SM PLUS MINUS MULT DIV POW FACT ASSIGN FOR COL WHILE BREAK COLON DEFAULT CASE SWITCH INCREMENT DECREMENT LOGIC LOE GOT
 %type <string> statement
 %type <number> expression
 %nonassoc IFX
@@ -45,6 +45,8 @@ cstatement: /* empty */
 	| cstatement statement
 	
 	| cdeclaration
+	| cstatement print
+
 	;
 
 cdeclaration:	TYPE ID1 SM	{ printf("\nvalid declaration\n"); }
@@ -232,7 +234,7 @@ expression: NUM				{ $$ = $1; 	}
 
 	| LP expression RP		{ $$ = $2;	}
 	
-	| inc expression inc         { $$=$2+1; printf("inc: %d\n",$$);}
+	
 	;
 %%
 

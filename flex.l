@@ -11,8 +11,6 @@
 
 Header "$".*
 identifiers "var_"[a-zA-Z0-9]+
-unary_operator "inc"|"dec"|"not"
-library_func "IN<"|"OUT>"
 integer [+-]?[0-9]+
 float [+-]?[0-9]+[.][0-9]+|[+-]?[.][0-9]+|[1-9]+e[+-][0-9]+
 double [+-]?[0-9]+[.][0-9]+{6,12}|[+-]?[.][0-9]+|[1-9]+e[+-][0-9]+{6,12}
@@ -20,7 +18,6 @@ char [A-Za-z]+
 single_line_comment [#][#].*
 multiple_line_comment [ ]*[#][/][a-zA-Z0-9!@#*(){}_+-,.:\|?><\n\t ]*[/][#]
 
-/*RE and Action*/
 
 %%
 
@@ -33,13 +30,13 @@ multiple_line_comment [ ]*[#][/][a-zA-Z0-9!@#*(){}_+-,.:\|?><\n\t ]*[/][#]
 	printf("multiline comment");
 }
 
-{unary_operator}   {return inc;}
 "["	 { return LB; }
 "]"	  { return RB; }
 "break_loop"    {   return BREAK;     }
 "select"      { return CASE;      }
 "switch"      { return SWITCH;	}
 "default"     {  return DEFAULT; 	}
+"print"	{return PRINT;}
 "loop_while" { return WHILE;}
 "intData"	{ return INT; }
 "floatData"	{ return FLOAT; }
@@ -80,8 +77,5 @@ multiple_line_comment [ ]*[#][/][a-zA-Z0-9!@#*(){}_+-,.:\|?><\n\t ]*[/][#]
 {Header}        {fprintf(yyout,"This is a Header file \n");}
 [ \t\n]*	
 
-.	{
-		yyerror("Unknown Character.\n");
-	}
 %%
 
