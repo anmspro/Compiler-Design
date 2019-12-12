@@ -9,7 +9,7 @@ RELATIONAL_OPERATOR "<"|">"|"<="|">="|"&&"|"||"|"=="|"!="
 IDENTIFIER ({CHARACTER}|{DIGIT}|{SPECIAL})+
 
 %{
-    #include "project.tab.h"
+    #include "bison.tab.h"
     #include <string.h>
     int yyparse();
     int yylex();

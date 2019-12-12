@@ -435,10 +435,10 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "project.l"
+#line 1 "flex.l"
 #define INITIAL 0
-#line 12 "project.l"
-    #include "project.tab.h"
+#line 12 "flex.l"
+    #include "bison.tab.h"
     #include <string.h>
     int yyparse();
     int yylex();
@@ -597,7 +597,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 22 "project.l"
+#line 22 "flex.l"
 
 #line 603 "lex.yy.c"
 
@@ -684,7 +684,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 23 "project.l"
+#line 23 "flex.l"
 { 
 	com=0;
 	fprintf(output,"Single line comments found\n");
@@ -692,7 +692,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 27 "project.l"
+#line 27 "flex.l"
 {
     if(com==0){
         fprintf(output,"Multiple line comments started\n");
@@ -702,7 +702,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 34 "project.l"
+#line 34 "flex.l"
 {
     if(com==1){
         fprintf(output,"Multiple line comments ended\n");
@@ -716,7 +716,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 44 "project.l"
+#line 44 "flex.l"
 {
     if(com==0){
         count();
@@ -725,7 +725,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 49 "project.l"
+#line 49 "flex.l"
 { 
     if(com==0){
         count();
@@ -734,7 +734,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 54 "project.l"
+#line 54 "flex.l"
 {
         if(com==0){
             count();
@@ -744,7 +744,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 60 "project.l"
+#line 60 "flex.l"
 {
         if(com==0){
             count();
@@ -754,7 +754,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 66 "project.l"
+#line 66 "flex.l"
 {
     if(com==0){
         count();
@@ -766,7 +766,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 75 "project.l"
+#line 75 "flex.l"
 { 
     if(com==0){
         count();
@@ -777,7 +777,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 82 "project.l"
+#line 82 "flex.l"
 { 
     if(com==0){
         count();
@@ -788,7 +788,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 89 "project.l"
+#line 89 "flex.l"
 {
     if(com==0){
         count();
@@ -799,7 +799,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 96 "project.l"
+#line 96 "flex.l"
 {
     if(com==0){
         count();
@@ -810,7 +810,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 103 "project.l"
+#line 103 "flex.l"
 {
     if(com==0){
         count();
@@ -822,7 +822,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 112 "project.l"
+#line 112 "flex.l"
 {
     if(com==0){
         count();
@@ -833,7 +833,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 119 "project.l"
+#line 119 "flex.l"
 {
     if(com==0){
         count();
@@ -844,7 +844,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 126 "project.l"
+#line 126 "flex.l"
 {
     if(com==0){
         count();
@@ -855,7 +855,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 134 "project.l"
+#line 134 "flex.l"
 {
     if(com==0){
         count();
@@ -866,7 +866,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 141 "project.l"
+#line 141 "flex.l"
 {
     if(com==0){
         count();
@@ -877,7 +877,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 149 "project.l"
+#line 149 "flex.l"
 {
     if(com==0){
         count();
@@ -888,7 +888,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 156 "project.l"
+#line 156 "flex.l"
 {
         if(com==0){
             count();
@@ -899,7 +899,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 164 "project.l"
+#line 164 "flex.l"
 {
         if(com==0){
             count();
@@ -910,7 +910,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 171 "project.l"
+#line 171 "flex.l"
 {
         if(com==0){
             count();
@@ -921,7 +921,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 179 "project.l"
+#line 179 "flex.l"
 {
         if(com==0){
             count();
@@ -932,7 +932,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 186 "project.l"
+#line 186 "flex.l"
 {
         if(com==0){
             count();
@@ -943,7 +943,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 193 "project.l"
+#line 193 "flex.l"
 {
         if(com==0){
             count();
@@ -954,7 +954,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 200 "project.l"
+#line 200 "flex.l"
 {
         if(com==0){
             count();
@@ -965,7 +965,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 207 "project.l"
+#line 207 "flex.l"
 {
         if(com==0){
             count();
@@ -976,7 +976,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 214 "project.l"
+#line 214 "flex.l"
 {
         if(com==0){
             count();
@@ -987,7 +987,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 221 "project.l"
+#line 221 "flex.l"
 {
         if(com==0){
             count();
@@ -998,7 +998,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 228 "project.l"
+#line 228 "flex.l"
 {
         if(com==0){
             count();
@@ -1009,7 +1009,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 235 "project.l"
+#line 235 "flex.l"
 {
         if(com==0){
             count();
@@ -1020,7 +1020,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 242 "project.l"
+#line 242 "flex.l"
 {
         if(com==0){
             count();
@@ -1031,7 +1031,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 249 "project.l"
+#line 249 "flex.l"
 {
         if(com==0){
             count();
@@ -1042,7 +1042,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 257 "project.l"
+#line 257 "flex.l"
 {
         if(com==0){
             count();
@@ -1053,7 +1053,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 264 "project.l"
+#line 264 "flex.l"
 {
         if(com==0){
             count();
@@ -1064,7 +1064,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 271 "project.l"
+#line 271 "flex.l"
 {
         if(com==0){
             count();
@@ -1075,7 +1075,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 280 "project.l"
+#line 280 "flex.l"
 {
     if(com==0){
         count();
@@ -1088,7 +1088,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 290 "project.l"
+#line 290 "flex.l"
 {
 		if(com==0){
             count();
@@ -1099,7 +1099,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 297 "project.l"
+#line 297 "flex.l"
 {
     if(com==0){
 	        count();
@@ -1111,7 +1111,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 306 "project.l"
+#line 306 "flex.l"
 {
         if(com==0){
             count();
@@ -1122,7 +1122,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 314 "project.l"
+#line 314 "flex.l"
 {
         if(com==0){
             count();
@@ -1133,7 +1133,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 321 "project.l"
+#line 321 "flex.l"
 {
       if(com==0){
           count();
@@ -1144,7 +1144,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 328 "project.l"
+#line 328 "flex.l"
 {
 		if(com==0){
             count();
@@ -1155,7 +1155,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 336 "project.l"
+#line 336 "flex.l"
 {
 	if(com==0){
 		printf("Compilation Error!\n");
@@ -1165,7 +1165,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 343 "project.l"
+#line 343 "flex.l"
 ECHO;
 	YY_BREAK
 #line 1172 "lex.yy.c"
@@ -2054,7 +2054,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 343 "project.l"
+#line 343 "flex.l"
 
 
 int yywrap()

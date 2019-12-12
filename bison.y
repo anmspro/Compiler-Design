@@ -3,7 +3,7 @@
     #include<stdlib.h>
     #include<string.h>
     #include<math.h>
-    #include "project.c"
+    #include "code.c"
     int yyparse();
     int yylex();
     int yyerror();

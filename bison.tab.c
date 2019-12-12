@@ -68,13 +68,13 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 189 of yacc.c  */
-#line 1 "project.y"
+#line 1 "bison.y"
 
     #include<stdio.h>
     #include<stdlib.h>
     #include<string.h>
     #include<math.h>
-    #include "project.c"
+    #include "code.c"
     int yyparse();
     int yylex();
     int yyerror();
@@ -86,7 +86,7 @@
 
 
 /* Line 189 of yacc.c  */
-#line 90 "project.tab.c"
+#line 90 "bison.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -164,7 +164,7 @@ typedef union YYSTYPE
 {
 
 /* Line 214 of yacc.c  */
-#line 17 "project.y"
+#line 17 "bison.y"
 
     char str[1000];
     int val;
@@ -172,7 +172,7 @@ typedef union YYSTYPE
 
 
 /* Line 214 of yacc.c  */
-#line 176 "project.tab.c"
+#line 176 "bison.tab.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -184,7 +184,7 @@ typedef union YYSTYPE
 
 
 /* Line 264 of yacc.c  */
-#line 188 "project.tab.c"
+#line 188 "bison.tab.c"
 
 #ifdef short
 # undef short
@@ -1607,7 +1607,7 @@ yyreduce:
         case 2:
 
 /* Line 1455 of yacc.c  */
-#line 44 "project.y"
+#line 44 "bison.y"
     { 
                 printf("\n Compiled Successfully\n");
             ;}
@@ -1616,7 +1616,7 @@ yyreduce:
   case 5:
 
 /* Line 1455 of yacc.c  */
-#line 53 "project.y"
+#line 53 "bison.y"
     { 
                 printf("  Header Included\n");
             ;}
@@ -1625,49 +1625,49 @@ yyreduce:
   case 16:
 
 /* Line 1455 of yacc.c  */
-#line 71 "project.y"
+#line 71 "bison.y"
     { ;}
     break;
 
   case 19:
 
 /* Line 1455 of yacc.c  */
-#line 73 "project.y"
+#line 73 "bison.y"
     { ;}
     break;
 
   case 20:
 
 /* Line 1455 of yacc.c  */
-#line 75 "project.y"
+#line 75 "bison.y"
     { ;}
     break;
 
   case 21:
 
 /* Line 1455 of yacc.c  */
-#line 76 "project.y"
+#line 76 "bison.y"
     { ;}
     break;
 
   case 22:
 
 /* Line 1455 of yacc.c  */
-#line 79 "project.y"
+#line 79 "bison.y"
     { ;}
     break;
 
   case 23:
 
 /* Line 1455 of yacc.c  */
-#line 82 "project.y"
+#line 82 "bison.y"
     { ;}
     break;
 
   case 24:
 
 /* Line 1455 of yacc.c  */
-#line 84 "project.y"
+#line 84 "bison.y"
     {
                 int idx = isCreated(sz,(yyvsp[(1) - (4)].str));
                 if(idx==-1)
@@ -1688,14 +1688,14 @@ yyreduce:
   case 25:
 
 /* Line 1455 of yacc.c  */
-#line 101 "project.y"
+#line 101 "bison.y"
     { (yyval.val) = (yyvsp[(1) - (1)].val); ;}
     break;
 
   case 26:
 
 /* Line 1455 of yacc.c  */
-#line 103 "project.y"
+#line 103 "bison.y"
     {
                     int idx = isCreated(sz,(yyvsp[(1) - (1)].str));
                     if(idx==-1)
@@ -1716,7 +1716,7 @@ yyreduce:
   case 27:
 
 /* Line 1455 of yacc.c  */
-#line 119 "project.y"
+#line 119 "bison.y"
     {
                     (yyval.val) = (yyvsp[(1) - (3)].val)+(yyvsp[(3) - (3)].val);
                 ;}
@@ -1725,7 +1725,7 @@ yyreduce:
   case 28:
 
 /* Line 1455 of yacc.c  */
-#line 123 "project.y"
+#line 123 "bison.y"
     {
                     (yyval.val) = (yyvsp[(1) - (3)].val)-(yyvsp[(3) - (3)].val);
                 ;}
@@ -1734,7 +1734,7 @@ yyreduce:
   case 29:
 
 /* Line 1455 of yacc.c  */
-#line 127 "project.y"
+#line 127 "bison.y"
     {
                     (yyval.val) = (yyvsp[(1) - (3)].val)*(yyvsp[(3) - (3)].val);
                 ;}
@@ -1743,7 +1743,7 @@ yyreduce:
   case 30:
 
 /* Line 1455 of yacc.c  */
-#line 131 "project.y"
+#line 131 "bison.y"
     {
                     if((yyvsp[(3) - (3)].val)==0)
                     {
@@ -1757,7 +1757,7 @@ yyreduce:
   case 31:
 
 /* Line 1455 of yacc.c  */
-#line 140 "project.y"
+#line 140 "bison.y"
     {
                     (yyval.val) = ((yyvsp[(1) - (3)].val)<(yyvsp[(3) - (3)].val));
                 ;}
@@ -1766,7 +1766,7 @@ yyreduce:
   case 32:
 
 /* Line 1455 of yacc.c  */
-#line 144 "project.y"
+#line 144 "bison.y"
     {
                     (yyval.val) = ((yyvsp[(1) - (3)].val)>(yyvsp[(3) - (3)].val));
                 ;}
@@ -1775,7 +1775,7 @@ yyreduce:
   case 33:
 
 /* Line 1455 of yacc.c  */
-#line 148 "project.y"
+#line 148 "bison.y"
     {
                     (yyval.val) = ((yyvsp[(1) - (3)].val)<=(yyvsp[(3) - (3)].val));
                     
@@ -1785,7 +1785,7 @@ yyreduce:
   case 34:
 
 /* Line 1455 of yacc.c  */
-#line 153 "project.y"
+#line 153 "bison.y"
     {
                     (yyval.val) = ((yyvsp[(1) - (3)].val)>=(yyvsp[(3) - (3)].val));
                 ;}
@@ -1794,7 +1794,7 @@ yyreduce:
   case 35:
 
 /* Line 1455 of yacc.c  */
-#line 157 "project.y"
+#line 157 "bison.y"
     {
                     (yyval.val) = ((yyvsp[(1) - (3)].val)==(yyvsp[(3) - (3)].val));
                 ;}
@@ -1803,7 +1803,7 @@ yyreduce:
   case 36:
 
 /* Line 1455 of yacc.c  */
-#line 161 "project.y"
+#line 161 "bison.y"
     {
                     (yyval.val) = ((yyvsp[(1) - (3)].val)!=(yyvsp[(3) - (3)].val));
                 ;}
@@ -1812,7 +1812,7 @@ yyreduce:
   case 37:
 
 /* Line 1455 of yacc.c  */
-#line 165 "project.y"
+#line 165 "bison.y"
     {
                     (yyval.val) = (yyvsp[(2) - (3)].val);
                 ;}
@@ -1821,7 +1821,7 @@ yyreduce:
   case 38:
 
 /* Line 1455 of yacc.c  */
-#line 169 "project.y"
+#line 169 "bison.y"
     {
                     int tmp = 1, k = 2, limit = (int)(yyvsp[(3) - (4)].val);
                     for(;k<=limit;k++){
@@ -1834,7 +1834,7 @@ yyreduce:
   case 39:
 
 /* Line 1455 of yacc.c  */
-#line 177 "project.y"
+#line 177 "bison.y"
     {
                     int tmp = 1, k = 1, limit = (int)(yyvsp[(5) - (6)].val);
                     for(;k<=limit;k++){
@@ -1847,7 +1847,7 @@ yyreduce:
   case 40:
 
 /* Line 1455 of yacc.c  */
-#line 187 "project.y"
+#line 187 "bison.y"
     {
                     int res = addNewID(sz,(yyvsp[(1) - (1)].str),"");
                     if(!res)
@@ -1862,7 +1862,7 @@ yyreduce:
   case 41:
 
 /* Line 1455 of yacc.c  */
-#line 197 "project.y"
+#line 197 "bison.y"
     {
                     int n = log10((yyvsp[(3) - (3)].val)) + 1;
                     char *numberArray = calloc(n, sizeof(char));
@@ -1880,7 +1880,7 @@ yyreduce:
   case 42:
 
 /* Line 1455 of yacc.c  */
-#line 212 "project.y"
+#line 212 "bison.y"
     {
                 printf("Value of exp : %f\n",(yyvsp[(3) - (5)].val));
             ;}
@@ -1889,7 +1889,7 @@ yyreduce:
   case 43:
 
 /* Line 1455 of yacc.c  */
-#line 216 "project.y"
+#line 216 "bison.y"
     {
                 int idx = isCreated(sz,(yyvsp[(3) - (5)].str));
                 if(idx==-1)
@@ -1907,7 +1907,7 @@ yyreduce:
   case 44:
 
 /* Line 1455 of yacc.c  */
-#line 229 "project.y"
+#line 229 "bison.y"
     {
                 printf("Print String -> %s\n",(yyvsp[(3) - (5)].str));
             ;}
@@ -1916,7 +1916,7 @@ yyreduce:
   case 45:
 
 /* Line 1455 of yacc.c  */
-#line 233 "project.y"
+#line 233 "bison.y"
     {
                 printf("\n");
             ;}
@@ -1925,7 +1925,7 @@ yyreduce:
   case 46:
 
 /* Line 1455 of yacc.c  */
-#line 238 "project.y"
+#line 238 "bison.y"
     {
                     ptrIf++;
                     if((yyvsp[(3) - (7)].val)>0){
@@ -1938,7 +1938,7 @@ yyreduce:
   case 47:
 
 /* Line 1455 of yacc.c  */
-#line 244 "project.y"
+#line 244 "bison.y"
     {
                     ptrIf--;
                 ;}
@@ -1947,7 +1947,7 @@ yyreduce:
   case 49:
 
 /* Line 1455 of yacc.c  */
-#line 250 "project.y"
+#line 250 "bison.y"
     {
                 if(acceptedIf[ptrIf]==0 && (yyvsp[(3) - (7)].val)>0){
                     acceptedIf[ptrIf]=1;
@@ -1959,7 +1959,7 @@ yyreduce:
   case 51:
 
 /* Line 1455 of yacc.c  */
-#line 257 "project.y"
+#line 257 "bison.y"
     {
                 if(acceptedIf[ptrIf]==0)
                     printf("ELSE Statement Executed\n");
@@ -1969,7 +1969,7 @@ yyreduce:
   case 52:
 
 /* Line 1455 of yacc.c  */
-#line 263 "project.y"
+#line 263 "bison.y"
     {
                 printf("for loop executed\n");
             ;}
@@ -1978,7 +1978,7 @@ yyreduce:
   case 55:
 
 /* Line 1455 of yacc.c  */
-#line 271 "project.y"
+#line 271 "bison.y"
     {
                 printf("while condition executed for %d\n",(yyvsp[(3) - (7)].val));
             ;}
@@ -1987,7 +1987,7 @@ yyreduce:
   case 58:
 
 /* Line 1455 of yacc.c  */
-#line 280 "project.y"
+#line 280 "bison.y"
     {
                     printf("\nfunction declared\n");
                 ;}
@@ -1996,7 +1996,7 @@ yyreduce:
   case 63:
 
 /* Line 1455 of yacc.c  */
-#line 292 "project.y"
+#line 292 "bison.y"
     {
                     printf("switch statement executed\n");
                 ;}
@@ -2005,7 +2005,7 @@ yyreduce:
   case 64:
 
 /* Line 1455 of yacc.c  */
-#line 298 "project.y"
+#line 298 "bison.y"
     {
                         sdone = 0;
                         svar = (yyvsp[(1) - (1)].val);
@@ -2015,7 +2015,7 @@ yyreduce:
   case 66:
 
 /* Line 1455 of yacc.c  */
-#line 307 "project.y"
+#line 307 "bison.y"
     {
                         if((yyvsp[(2) - (6)].val) == svar){
                             printf("%d Executed\n",(yyvsp[(2) - (6)].val));
@@ -2027,7 +2027,7 @@ yyreduce:
   case 67:
 
 /* Line 1455 of yacc.c  */
-#line 314 "project.y"
+#line 314 "bison.y"
     {
                         if(sdone == 0){
                             sdone = 1;
@@ -2039,7 +2039,7 @@ yyreduce:
 
 
 /* Line 1455 of yacc.c  */
-#line 2043 "project.tab.c"
+#line 2043 "bison.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -2251,7 +2251,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 322 "project.y"
+#line 322 "bison.y"
 
 
 extern char yytext[];
