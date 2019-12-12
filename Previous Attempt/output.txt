@@ -1,0 +1,40 @@
+This is a Header file 
+var_c is already declared
+var_b is already declared
+
+valid declaration
+
+(var_a) Value of the variable: 8	
+
+(var_b) Value of the variable: 4	
+var_ad not declared yet
+
+value of expression: 15
+
+value of expression: 23
+
+condition value zero in IF block
+
+value of expression in IF: 24
+
+value of expression in ELSE: 13
+
+value of expression middle ELSE: 10
+
+value of expression in first IF: 15
+
+value of expression in ELIF: 7
+for loop statement : 
+for loop statement : 
+for loop statement : 
+for loop statement : 
+While LOOP: 0 1 2 3 4 5 
+value of the expression: 6
+
+Case No : 1  and Result :  6
+
+Case No : 2  and Result :  5
+SWITCH case.
+single line comment
+multiline comment
+Successful compilation

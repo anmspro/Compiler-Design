@@ -1,4 +1,4 @@
-bison -d bison.y
-flex flex.l
-gcc lex.yy.c bison.tab.c -o app
+bison -d project.y
+flex project.l
+gcc lex.yy.c project.tab.c -o app
 app

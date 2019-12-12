@@ -1,40 +1,195 @@
-This is a Header file 
-var_c is already declared
-var_b is already declared
-
-valid declaration
-
-(var_a) Value of the variable: 8	
-
-(var_b) Value of the variable: 4	
-var_ad not declared yet
-
-value of expression: 15
-
-value of expression: 23
-
-condition value zero in IF block
-
-value of expression in IF: 24
-
-value of expression in ELSE: 13
-
-value of expression middle ELSE: 10
-
-value of expression in first IF: 15
-
-value of expression in ELIF: 7
-for loop statement : 
-for loop statement : 
-for loop statement : 
-for loop statement : 
-While LOOP: 0 1 2 3 4 5 
-value of the expression: 6
-
-Case No : 1  and Result :  6
-
-Case No : 2  and Result :  5
-SWITCH case.
-single line comment
-multiline comment
-Successful compilation
+TOKEN 32 -> header->math
+TOKEN 7 -> int
+TOKEN 2 -> fun->main
+TOKEN 12 -> (
+TOKEN 13 -> )
+TOKEN 14 -> {
+Single line comments found
+Multiple line comments started
+Multiple line comments ended
+TOKEN 7 -> int
+TOKEN 6 -> var->i
+TOKEN 20 -> =
+TOKEN 31 -> fact
+TOKEN 12 -> (
+TOKEN 1 -> 4
+TOKEN 13 -> )
+TOKEN 7 -> int
+TOKEN 6 -> var->j
+TOKEN 20 -> =
+TOKEN 1 -> 30
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "var"
+TOKEN 13 -> )
+TOKEN 7 -> int
+TOKEN 6 -> var->p
+TOKEN 20 -> =
+TOKEN 36 -> power
+TOKEN 12 -> (
+TOKEN 1 -> 10
+TOKEN 1 -> 2
+TOKEN 13 -> )
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 6 -> var->p
+TOKEN 13 -> )
+TOKEN 28 -> if
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 16 -> <=
+TOKEN 6 -> var->j
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 28 -> if
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 25 -> <
+TOKEN 1 -> 10
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "less than 10"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 27 -> elif
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 18 -> ==
+TOKEN 1 -> 10
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "equal to 10"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 29 -> else
+TOKEN 14 -> {
+TOKEN 28 -> if
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 25 -> <
+TOKEN 1 -> 15
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "less than 15"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 27 -> elif
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 18 -> ==
+TOKEN 1 -> 15
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "equal to 15"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 27 -> elif
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 18 -> ==
+TOKEN 1 -> 24
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "equal to 24"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 15 -> }
+TOKEN 15 -> }
+TOKEN 27 -> elif
+TOKEN 12 -> (
+TOKEN 6 -> var->j
+TOKEN 25 -> <
+TOKEN 6 -> var->i
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "greater than var->j"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 29 -> else
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "WOW"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 13 -> )
+TOKEN 33 -> Switch
+TOKEN 12 -> (
+TOKEN 6 -> var->i
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 1 -> 10
+TOKEN 34 -> :
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "greater than var->j"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 35 -> default
+TOKEN 34 -> :
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "hello"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 15 -> }
+TOKEN 7 -> int
+TOKEN 6 -> var->k
+TOKEN 10 -> for
+TOKEN 12 -> (
+TOKEN 6 -> var->k
+TOKEN 20 -> =
+TOKEN 1 -> 0
+TOKEN 6 -> var->k
+TOKEN 25 -> <
+TOKEN 1 -> 1
+TOKEN 6 -> var->k
+TOKEN 20 -> =
+TOKEN 6 -> var->k
+TOKEN 21 -> +
+TOKEN 1 -> 1
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "for loop"
+TOKEN 13 -> )
+TOKEN 15 -> }
+TOKEN 6 -> var->k
+TOKEN 20 -> =
+TOKEN 1 -> 1
+TOKEN 11 -> while
+TOKEN 12 -> (
+TOKEN 6 -> var->k
+TOKEN 25 -> <
+TOKEN 1 -> 2
+TOKEN 13 -> )
+TOKEN 14 -> {
+TOKEN 4 -> fun->print
+TOKEN 12 -> (
+TOKEN 30 -> "while loop"
+TOKEN 13 -> )
+TOKEN 6 -> var->k
+TOKEN 20 -> =
+TOKEN 6 -> var->k
+TOKEN 21 -> +
+TOKEN 1 -> 1
+TOKEN 15 -> }
+TOKEN 15 -> }
