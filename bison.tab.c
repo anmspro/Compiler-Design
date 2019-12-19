@@ -137,7 +137,7 @@
      CLOSEBRACKET = 279,
      BRACKETBEGIN = 280,
      BRACKETEND = 281,
-     SEMICOLON = 282,
+     DOT = 282,
      COMMA = 283,
      ASSIGN = 284,
      COLON = 285,
@@ -521,14 +521,13 @@ static const char *const yytname[] =
   "LESSEQUAL", "GREATERTHAN", "LESSTHAN", "MINUS", "PLUS", "DIVISION",
   "MULTIPLICATION", "INT", "DOUBLE", "CHAR", "VOID", "WHILE", "FOR", "IF",
   "ELSE", "ELIF", "OPENBRACKET", "CLOSEBRACKET", "BRACKETBEGIN",
-  "BRACKETEND", "SEMICOLON", "COMMA", "ASSIGN", "COLON", "EQUAL",
-  "NOTEQUAL", "MAIN", "PRINT", "PRINTLN", "FUNCTION", "FACT", "HEADER",
-  "SWITCH", "DEFAULT", "POWER", "IFX", "ELIFX", "$accept", "start",
-  "header", "head", "program", "statement", "declaration", "type",
-  "variables", "arithmeticexp", "assign", "exp", "variable", "print",
-  "ifelse", "$@1", "elif", "$@2", "forstmt", "forassign", "whilestmt",
-  "function", "func", "fparams", "fparam", "switchstmt", "condition",
-  "cases", 0
+  "BRACKETEND", "DOT", "COMMA", "ASSIGN", "COLON", "EQUAL", "NOTEQUAL",
+  "MAIN", "PRINT", "PRINTLN", "FUNCTION", "FACT", "HEADER", "SWITCH",
+  "DEFAULT", "POWER", "IFX", "ELIFX", "$accept", "start", "header", "head",
+  "program", "statement", "declaration", "type", "variables",
+  "arithmeticexp", "assign", "exp", "variable", "print", "ifelse", "$@1",
+  "elif", "$@2", "forstmt", "forassign", "whilestmt", "function", "func",
+  "fparams", "fparam", "switchstmt", "condition", "cases", 0
 };
 #endif
 
@@ -2039,7 +2038,7 @@ yyreduce:
 
 
 /* Line 1455 of yacc.c  */
-#line 2043 "bison.tab.c"
+#line 2042 "bison.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);

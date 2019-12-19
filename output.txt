@@ -1,195 +1,195 @@
-TOKEN 32 -> header->math
-TOKEN 7 -> int
-TOKEN 2 -> fun->main
-TOKEN 12 -> (
-TOKEN 13 -> )
-TOKEN 14 -> {
+TOKEN : header_math
+TOKEN : int
+TOKEN : fun_main
+TOKEN : [
+TOKEN : ]
+TOKEN : {
+TOKEN : int
+TOKEN : var_i
+TOKEN : =
+TOKEN : fact
+TOKEN : [
+TOKEN : 4
+TOKEN : ]
+TOKEN : int
+TOKEN : var_j
+TOKEN : =
+TOKEN : 30
+TOKEN : int
+TOKEN : var_p
+TOKEN : =
+TOKEN : power
+TOKEN : [
+TOKEN : 10
+TOKEN : 2
+TOKEN : ]
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "Print Message!"
+TOKEN : ]
+TOKEN : fun_print
+TOKEN : [
+TOKEN : var_p
+TOKEN : ]
+TOKEN : if
+TOKEN : [
+TOKEN : var_i
+TOKEN : <=
+TOKEN : var_j
+TOKEN : ]
+TOKEN : {
+TOKEN : if
+TOKEN : [
+TOKEN : var_i
+TOKEN : <
+TOKEN : 5
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "Value is less than 5."
+TOKEN : ]
+TOKEN : }
+TOKEN : elif
+TOKEN : [
+TOKEN : var_i
+TOKEN : ==
+TOKEN : 5
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "Value is equal to 5."
+TOKEN : ]
+TOKEN : }
+TOKEN : else
+TOKEN : {
+TOKEN : if
+TOKEN : [
+TOKEN : var_i
+TOKEN : <
+TOKEN : 15
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "Value is less than 15."
+TOKEN : ]
+TOKEN : }
+TOKEN : elif
+TOKEN : [
+TOKEN : var_i
+TOKEN : ==
+TOKEN : 15
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "Value is equal to 15."
+TOKEN : ]
+TOKEN : }
+TOKEN : elif
+TOKEN : [
+TOKEN : var_i
+TOKEN : ==
+TOKEN : 24
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "Value is equal to 24."
+TOKEN : ]
+TOKEN : }
+TOKEN : }
+TOKEN : }
+TOKEN : elif
+TOKEN : [
+TOKEN : var_j
+TOKEN : <
+TOKEN : var_i
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "greater than var_j"
+TOKEN : ]
+TOKEN : }
+TOKEN : else
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "less than var_j"
+TOKEN : ]
+TOKEN : }
+TOKEN : fun_print
+TOKEN : [
+TOKEN : var_i
+TOKEN : ]
+TOKEN : switch
+TOKEN : [
+TOKEN : var_i
+TOKEN : ]
+TOKEN : {
+TOKEN : 10
+TOKEN : :
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "greater than var_j"
+TOKEN : ]
+TOKEN : }
+TOKEN : default
+TOKEN : :
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "default"
+TOKEN : ]
+TOKEN : }
+TOKEN : }
+TOKEN : int
+TOKEN : var_k
+TOKEN : for
+TOKEN : [
+TOKEN : var_k
+TOKEN : =
+TOKEN : 0
+TOKEN : var_k
+TOKEN : <
+TOKEN : 1
+TOKEN : var_k
+TOKEN : =
+TOKEN : var_k
+TOKEN : +
+TOKEN : 1
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "for loop"
+TOKEN : ]
+TOKEN : }
+TOKEN : var_k
+TOKEN : =
+TOKEN : 1
+TOKEN : while
+TOKEN : [
+TOKEN : var_k
+TOKEN : <
+TOKEN : 2
+TOKEN : ]
+TOKEN : {
+TOKEN : fun_print
+TOKEN : [
+TOKEN : "while loop"
+TOKEN : ]
+TOKEN : var_k
+TOKEN : =
+TOKEN : var_k
+TOKEN : +
+TOKEN : 1
+TOKEN : }
 Single line comments found
 Multiple line comments started
 Multiple line comments ended
-TOKEN 7 -> int
-TOKEN 6 -> var->i
-TOKEN 20 -> =
-TOKEN 31 -> fact
-TOKEN 12 -> (
-TOKEN 1 -> 4
-TOKEN 13 -> )
-TOKEN 7 -> int
-TOKEN 6 -> var->j
-TOKEN 20 -> =
-TOKEN 1 -> 30
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "var"
-TOKEN 13 -> )
-TOKEN 7 -> int
-TOKEN 6 -> var->p
-TOKEN 20 -> =
-TOKEN 36 -> power
-TOKEN 12 -> (
-TOKEN 1 -> 10
-TOKEN 1 -> 2
-TOKEN 13 -> )
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 6 -> var->p
-TOKEN 13 -> )
-TOKEN 28 -> if
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 16 -> <=
-TOKEN 6 -> var->j
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 28 -> if
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 25 -> <
-TOKEN 1 -> 10
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "less than 10"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 27 -> elif
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 18 -> ==
-TOKEN 1 -> 10
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "equal to 10"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 29 -> else
-TOKEN 14 -> {
-TOKEN 28 -> if
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 25 -> <
-TOKEN 1 -> 15
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "less than 15"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 27 -> elif
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 18 -> ==
-TOKEN 1 -> 15
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "equal to 15"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 27 -> elif
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 18 -> ==
-TOKEN 1 -> 24
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "equal to 24"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 15 -> }
-TOKEN 15 -> }
-TOKEN 27 -> elif
-TOKEN 12 -> (
-TOKEN 6 -> var->j
-TOKEN 25 -> <
-TOKEN 6 -> var->i
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "greater than var->j"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 29 -> else
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "WOW"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 13 -> )
-TOKEN 33 -> Switch
-TOKEN 12 -> (
-TOKEN 6 -> var->i
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 1 -> 10
-TOKEN 34 -> :
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "greater than var->j"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 35 -> default
-TOKEN 34 -> :
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "hello"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 15 -> }
-TOKEN 7 -> int
-TOKEN 6 -> var->k
-TOKEN 10 -> for
-TOKEN 12 -> (
-TOKEN 6 -> var->k
-TOKEN 20 -> =
-TOKEN 1 -> 0
-TOKEN 6 -> var->k
-TOKEN 25 -> <
-TOKEN 1 -> 1
-TOKEN 6 -> var->k
-TOKEN 20 -> =
-TOKEN 6 -> var->k
-TOKEN 21 -> +
-TOKEN 1 -> 1
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "for loop"
-TOKEN 13 -> )
-TOKEN 15 -> }
-TOKEN 6 -> var->k
-TOKEN 20 -> =
-TOKEN 1 -> 1
-TOKEN 11 -> while
-TOKEN 12 -> (
-TOKEN 6 -> var->k
-TOKEN 25 -> <
-TOKEN 1 -> 2
-TOKEN 13 -> )
-TOKEN 14 -> {
-TOKEN 4 -> fun->print
-TOKEN 12 -> (
-TOKEN 30 -> "while loop"
-TOKEN 13 -> )
-TOKEN 6 -> var->k
-TOKEN 20 -> =
-TOKEN 6 -> var->k
-TOKEN 21 -> +
-TOKEN 1 -> 1
-TOKEN 15 -> }
-TOKEN 15 -> }
+TOKEN : }

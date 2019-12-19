@@ -63,7 +63,7 @@
      CLOSEBRACKET = 279,
      BRACKETBEGIN = 280,
      BRACKETEND = 281,
-     SEMICOLON = 282,
+     DOT = 282,
      COMMA = 283,
      ASSIGN = 284,
      COLON = 285,

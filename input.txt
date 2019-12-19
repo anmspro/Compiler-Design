@@ -1,56 +1,58 @@
-header->math
-int fun->main()
+header_math
+int fun_main []
 {
-    !!this is a single line comment
-    !* this is
-    a multiple line comment
-    *! 
-    int var->i = fact(4);
-    int var->j = 30;
-    fun->print("var");
-    int var->p = power(10,2);
-    fun->print(var->p);
-    if(var->i<=var->j){
-        if(var->i<10){
-            fun->print("less than 10");
+    int var_i = fact [4].
+    int var_j = 30.
+    int var_p = power [10,2].
+    fun_print ["Print Message!"].
+    fun_print [var_p].
+    if [var_i <= var_j]{
+        if [var_i < 5]{
+            fun_print["Value is less than 5."].
         }
-        elif(var->i==10){
-            fun->print("equal to 10");
+        elif [var_i == 5]{
+            fun_print["Value is equal to 5."].
         }
         else{
-            if(var->i<15){
-                fun->print("less than 15");
+            if [var_i < 15]{
+                fun_print ["Value is less than 15."].
             }
-            elif(var->i==15){
-                fun->print("equal to 15");
+            elif [var_i == 15]{
+                fun_print ["Value is equal to 15."].
             }
-            elif(var->i==24){
-                fun->print("equal to 24");
+            elif [var_i == 24]{
+                fun_print ["Value is equal to 24."].
             }
         }
     }
-    elif(var->j<var->i){
-        fun->print("greater than var->j");
+    elif [var_j < var_i]{
+        fun_print ["greater than var_j"].
     }
     else{
-        fun->print("WOW");
+        fun_print ["less than var_j"].
     }
-    fun->print(var->i);
-    Switch(var->i){
+    
+    fun_print [var_i].
+
+    switch [var_i]{
         10:{
-            fun->print("greater than var->j");
+            fun_print ["greater than var_j"].
         }
         default:{
-            fun->print("hello");
+            fun_print ["default"].
         }
     }
-    int var->k;
-    for(var->k=0;var->k<1;var->k=var->k+1){
-        fun->print("for loop");
+    int var_k.
+    for [var_k = 0. var_k < 1. var_k = var_k+1]{
+        fun_print ["for loop"].
     }
-    var->k=1;
-    while(var->k<2){
-        fun->print("while loop");
-        var->k=var->k+1;
+    var_k = 1.
+    while [var_k < 2]{
+        fun_print ["while loop"].
+        var_k=var_k+1.
     }
+    ##this is a single line comment
+    #* this is
+    a multiple line comment
+    *# 
 }

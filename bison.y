@@ -31,7 +31,7 @@
 
 %token INT DOUBLE CHAR VOID
 %token WHILE FOR IF ELSE ELIF
-%token OPENBRACKET CLOSEBRACKET BRACKETBEGIN BRACKETEND SEMICOLON COMMA ASSIGN COLON
+%token OPENBRACKET CLOSEBRACKET BRACKETBEGIN BRACKETEND DOT COMMA ASSIGN COLON
 %token MINUS MULTIPLICATION DIVISION LESSTHAN GREATERTHAN LESSEQUAL GREATEREQUAL EQUAL NOTEQUAL
 %token MAIN PRINT PRINTLN FUNCTION
 %token FACT HEADER SWITCH DEFAULT POWER
@@ -68,7 +68,7 @@ statement   : /* empty */
             | statement forstmt
             | statement switchstmt
             ;
-declaration : type variables SEMICOLON { }
+declaration : type variables DOT { }
 
 type        : INT | DOUBLE | CHAR { }
             ;
@@ -76,11 +76,11 @@ variables   : variable COMMA variables { }
             | variable { }
             ;
 
-arithmeticexp : exp SEMICOLON { }
+arithmeticexp : exp DOT { }
             ;
 
 assign    : ID ASSIGN exp COMMA assign { }
-            | ID ASSIGN exp SEMICOLON
+            | ID ASSIGN exp DOT
             {
                 int idx = isCreated(sz,$1);
                 if(idx==-1)
@@ -208,11 +208,11 @@ variable    :ID
                 } 
             ;
 
-print   :PRINT OPENBRACKET exp CLOSEBRACKET SEMICOLON
+print   :PRINT OPENBRACKET exp CLOSEBRACKET DOT
             {
                 printf("Value of exp : %f\n",$3);
             }
-            |PRINT OPENBRACKET ID CLOSEBRACKET SEMICOLON
+            |PRINT OPENBRACKET ID CLOSEBRACKET DOT
             {
                 int idx = isCreated(sz,$3);
                 if(idx==-1)
@@ -225,11 +225,11 @@ print   :PRINT OPENBRACKET exp CLOSEBRACKET SEMICOLON
                     print(id[idx]);
                 }
             }
-        | PRINT OPENBRACKET STR CLOSEBRACKET SEMICOLON
+        | PRINT OPENBRACKET STR CLOSEBRACKET DOT
             {
                 printf("Print String -> %s\n",$3);
             }
-        | PRINTLN OPENBRACKET CLOSEBRACKET SEMICOLON
+        | PRINTLN OPENBRACKET CLOSEBRACKET DOT
             {
                 printf("\n");
             }
@@ -260,7 +260,7 @@ elif : /* empty */
             }
         ;
 
-forstmt : FOR OPENBRACKET forassign SEMICOLON exp SEMICOLON forassign CLOSEBRACKET BRACKETBEGIN statement BRACKETEND{
+forstmt : FOR OPENBRACKET forassign DOT exp DOT forassign CLOSEBRACKET BRACKETBEGIN statement BRACKETEND{
                 printf("for loop executed\n");
             }
             ;
